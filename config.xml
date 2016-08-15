@@ -1,6 +1,6 @@
 <widget xmlns="http://www.w3.org/ns/widgets" xmlns:gap="http://phonegap.com/ns/1.0" id="com.jonathandamon" version="1.0.0">
   <name>wrapapp</name>
-  <description>.</description>
+  <description>A minimal wrapper app for server-side mobile development.</description>
   <author href="http://jonathandamon.com" email="me@jonathandamon.com">Jonathan Damon</author>
   <content src="index.html"/>
   <preference name="DisallowOverscroll" value="true"/>
