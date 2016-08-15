@@ -2,7 +2,7 @@
 <widget id="com.jonathandamon" version="1.0.0" xmlns="http://www.w3.org/ns/widgets" xmlns:cdv="http://cordova.apache.org/ns/1.0" xmlns:gap="http://phonegap.com/ns/1.0">
     <name>wrapapp</name>
     <description>A minimal wrapper app for server-side mobile development.</description>
-    <author href="http://jonathandamon.com" email="me@jonathandamon.com">Jonathan Damon</author>
+    <author email="me@jonathandamon.com" href="http://jonathandamon.com">Jonathan Damon</author>
     <content src="index.html" />
     <icon src="icon.png" />
     <access origin="*" />
