@@ -43,16 +43,40 @@
 </head>
 
 <body>
-	<h1>Very Basic</h1>
-	<a href="#" class="ui-btn">Home</a>
-		<a href="#" class="ui-btn">About</a>
-
-	<h3>Doesn't get simpler than this</h3>
-	<p>It's like going back to elementary school when we had an actual html course.  Like when in comp sci did we do html again, right?</p>
 	
+<div data-role="page" id="pageone">
+  <div data-role="header">
+    <h1>Welcome To My Homepage</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>Welcome! If you click on the link below, it will take you to Page Two.</p>
+    <a href="#pagetwo">Go to Page Two</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div>
+
+<div data-role="page" id="pagetwo">
+  <div data-role="header">
+    <h1>Welcome To My Homepage</h1>
+  </div>
+
+  <div data-role="main" class="ui-content">
+    <p>This is Page Two. If you click on the link below, it will take you to Page One.</p>
+    <a href="#pageone">Go to Page One</a>
+  </div>
+
+  <div data-role="footer">
+    <h1>Footer Text</h1>
+  </div>
+</div>
     
     <script type="text/javascript" src="cordova.js"></script>
-    <script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
+    <script type="text/javascript" src="js/jquery-3.1.0.js"></script>
+	<script type="text/javascript" src="js/jquery.mobile-1.4.5.js"></script>
     
 </body>
 
