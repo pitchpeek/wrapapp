@@ -47,18 +47,3 @@ var app = {
         console.log('Received Event: ' + id);
     }
 };
-
-function loadPage(div,url) {
-    var xmlhttp = new XMLHttpRequest();
-
-    // Callback function when XMLHttpRequest is ready
-    xmlhttp.onreadystatechange=function(){
-        if (xmlhttp.readyState === 4){
-            if (xmlhttp.status === 200) {
-                document.getElementById(div).innerHTML = xmlhttp.responseText;
-            }
-        }
-    };
-    xmlhttp.open("GET", url , true);
-    xmlhttp.send();
-}
