@@ -45,7 +45,6 @@
     <splash src="www/res/screen/android/drawable-port-xhdpi-screen.png" density="port-xhdpi"/>
     <splash src="www/res/screen/android/drawable-port-xxhdpi-screen.png" density="port-xxhdpi"/>
     <splash src="www/res/screen/android/drawable-port-xxxhdpi-screen.png" density="port-xxxhdpi"/>
-	<allow-navigation href="http://pitchpeek.com/*" />
   </platform>
   <platform name="ios">
     <icon src="www/res/icon/ios/icon.png" platform="ios" width="57" height="57"/>
