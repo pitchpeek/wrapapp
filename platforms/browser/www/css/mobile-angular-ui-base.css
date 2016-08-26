@@ -8233,13 +8233,13 @@ ng-view.app-content,
 html {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
   font-weight: 200;
 }
 
@@ -8292,13 +8292,13 @@ img {
 html {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 body {
   height: 100%;
   width: 100%;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 textarea,
@@ -8413,23 +8413,23 @@ a.list-group-item .icon.pull-right {
   position: relative;
   z-index: 2;
   width: 100%;
-  background: #777777;
-  overflow: hidden;
+  /*background: #777777;*/
+  /*overflow: hidden;*/
   -webkit-transform: translate3d(0, 0, 0);
   transform: translate3d(0, 0, 0);
   -webkit-transition: -webkit-transform 400ms ease;
   -moz-transition: -moz-transform 400ms ease;
   -o-transition: -o-transform 400ms ease;
   transition: transform 400ms ease;
-  -webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
-  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  /*-webkit-box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);*/
 }
 
 .app-body {
   display: block;
   height: 100%;
   padding: 0;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .app-content {
@@ -8438,7 +8438,7 @@ a.list-group-item .icon.pull-right {
   height: 100%;
   width: 100%;
   padding: 50px 10px 0 10px;
-  overflow: hidden;
+  /*overflow: hidden;*/
 }
 
 .app-search {
