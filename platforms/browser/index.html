@@ -27,7 +27,7 @@
     <meta name="msapplication-tap-highlight" content="no" />
     <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width" />
     <!-- This is a wide open CSP declaration. To lock this down for production, see below. -->
-    <meta http-equiv="Content-Security-Policy" content="default-src * 'unsafe-inline'; style-src 'self' 'unsafe-inline'; media-src *" />
+    <!--<meta http-equiv="Content-Security-Policy" content="default-src 'self' 'unsafe-eval'; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline' 'unsafe-eval'; media-src *" />-->
     <!-- Good default declaration:
     * gap: is required only on iOS (when using UIWebView) and is needed for JS->native communication
     * https://ssl.gstatic.com is required only on Android and is needed for TalkBack to function properly
@@ -52,16 +52,14 @@
 
 <body ng-app="myApp">
 
-  <!-- Sidebars -->
-  <div class="sidebar sidebar-left">hi</div>
-  <div class="sidebar sidebar-right"><!-- ... --></div>
+ 
 
   <div class="app">
     <div class="navbar navbar-app navbar-absolute-top">
-	<div class="btn-group justified">
-  <a class="btn">Page 1</a>
-  <a class="btn">Page 2</a>
-  <a class="btn">Page 3</a>
+	<div class="btn-group justified" ui-state="activeTab" default="1">
+  <a href="about.html">Page 1</a>
+  <a ui-set="{'activeTab': 2}">Page 2</a>
+  <a ui-set="{'activeTab': 3}">Page 3</a>
 </div>
 	</div>
     <div class="navbar navbar-app navbar-absolute-bottom">Foot</div>
@@ -72,6 +70,30 @@
       <div class='app-content'>
          
 		 hi
+		 
+		 
+		 
+		
+
+  <div ui-if="activeTab == 1">
+    <h3 class="page-header">Tab 1</h3>
+    <p><!-- ... --></p>
+  </div>
+
+  <div ui-if="activeTab == 2">
+    <h3 class="page-header">Tab 2</h3>
+    <p><!-- ... --></p>
+  </div>
+
+  <div ui-if="activeTab == 3">
+    <h3 class="page-header">Tab 3</h3>
+    <p><!-- ... --></p>
+  </div>
+
+		 
+		 
+		 
+		 
 		
 		
 <div ng-app="myApp" ng-controller="myCtrl">
